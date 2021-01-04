@@ -6,7 +6,7 @@
 body {
     background-color: cyan;
     box-sizing: border-box;
-    
+    max-width: 1500px;
     
     margin: 0 auto;
 }
