@@ -9,11 +9,14 @@
 
 
 body {
-    background-color: aqua;
+    background-color: #f4dfdf;
     box-sizing: border-box;
     max-width: 1150px;
     
     margin: 0 auto;
+
+    
+    font-family: 'Podkova', serif;
 }
 img {
     display: block;
@@ -72,19 +75,34 @@ li {
 }
 
 .hero h1 {
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    font-size: 36px;
+    text-transform: capitalize;
+
+    display: block;
+    width: 300px;
+    background: rgba(47, 48, 58, 0.4)
+
     
+ 
 }
 .hero p {
     width: 300px;
+    
+    background: rgba(47, 48, 58, 0.4)
 }
-.verse {
+
+.ivan,
+.valeria {
+    width: 300px;
+    
+}
+
+.team {
+    margin-top: 50px;
     display: flex;
     justify-content: space-around;
-    
-    background-image: url(../img/hbflowers.jpg);
-    
-    background-repeat: repeat;
-    background-size: 200px;
 }
 
 
@@ -126,4 +144,34 @@ li {
 
 .photo-verticalli {
     margin-top: 20px;
+}
+
+/*footer*/
+
+.social-links {
+    display: flex;
+}
+
+.social-link {
+    width: 30px;
+}
+
+.boy {
+    fill: blue;
+}
+
+.girl {
+    fill: purple;
+}
+
+
+/*сторінка з віршом*/
+.verse {
+    display: flex;
+    justify-content: space-around;
+    
+    
+    
+    background-repeat: repeat;
+    background-size: 200px;
 }
