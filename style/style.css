@@ -3,7 +3,11 @@
     background-repeat: repeat;
     background-size: 200px;
     
+    
     --primari-white-color: #ffffff;
+    --accent-color-blue: #0000ff;
+    --primari-girl-color: purple;
+    --primari-boy-color: rgb(45, 45, 124);
 }
 
 
@@ -12,20 +16,25 @@ body {
     background-color: #f4dfdf;
     box-sizing: border-box;
     max-width: 1150px;
-    
+    font-size: 18px;
+    line-height: 1.5;
     margin: 0 auto;
+    padding-bottom: 30px;
 
     
     font-family: 'Podkova', serif;
 }
+
+
 img {
     display: block;
     padding: 0;
     margin: 0;
 }
-.oll-page {
 
-    
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 button {
@@ -38,10 +47,28 @@ ul  {
     padding: 0;
     margin: 0;
 }
+
 li {
     
     list-style-type: none;
 }
+.nav-container {
+display: flex;
+
+}
+.nav-container li+li {
+    margin-left: 20px;
+}
+.nav-link {
+    display: block;
+    padding: 15px 5px;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+color: var(--accent-color-blue);
+}
+
 .container {
     padding-right: 50px;
     padding-left: 50px;
@@ -52,12 +79,7 @@ li {
     display: block;
     height: 700px;
     padding: 50px 0;
-    background-image: linear-gradient(
-        to right,
-        rgba(255,0,0,),
-        rgba(0,0,255)
-
-    );
+    
     
     background-image: url(../img/hero.jpg);
     
@@ -65,7 +87,7 @@ li {
     background-size: cover;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
-    color: black;
+    
 }
 
 .hero-container {
@@ -89,8 +111,24 @@ li {
 }
 .hero p {
     width: 300px;
-    
+    font-weight: 400;
     background: rgba(47, 48, 58, 0.4)
+}
+
+.text-container{
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.text-container p {
+    text-indent: 20px; /* Отступ первой строки в пикселах */
+    text-align: left;
+}
+
+.team-card {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .ivan,
@@ -103,11 +141,60 @@ li {
     margin-top: 50px;
     display: flex;
     justify-content: space-around;
+
+}
+
+.team>li {
+    text-align: center;
+    background-color: var(--primari-white-color);
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-link {
+    width: 20px;
+    height: 20px;
+    
+    fill: currentColor;
+}
+
+.icon-social-link {
+    display: block;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    color: #afb1b8;
+    padding: 12px;
+
+}
+
+.ya:focus, 
+.ya:hover {
+    background-color: var(--primari-boy-color);
+    color: var(--primari-white-color);
+}
+.ty:hover,
+.ty:focus {
+    background-color: var(--primari-girl-color);
+    color: var(--primari-white-color);
+
 }
 
 
 
 /* Сторінка Альбом*/
+.album {
+    text-align: center;
+}
+
+
 
 .photo {
     width: 300px;
@@ -148,20 +235,14 @@ li {
 
 /*footer*/
 
-.social-links {
-    display: flex;
-}
 
-.social-link {
-    width: 30px;
-}
 
 .boy {
-    fill: blue;
+    color: var(--primari-boy-color)
 }
 
 .girl {
-    fill: purple;
+    color: var(--primari-girl-color);
 }
 
 
